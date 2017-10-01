@@ -35,24 +35,42 @@
 		}
 		.resume-title {
 			padding-bottom: 0.3em;
-			font-size: 1.75em;
+			font-size: 2em;
 			line-height: 1.225;
 			border-bottom: 1px solid #eee;
 		}
 		.resume-box-title {
 			margin: 0;
 			line-height: 1;
-			font-size: 1.25em;
+			font-size: 1.5em;
 		}
 		.resume-box {
 			margin: 2em 0;
 		}
+		.resume-box-list {
+			padding: 0 0 0 20px
+		}
+		.resume-box-item {
+			margin: 0
+		}
 		.resume-box-item-title {
 			margin: .5em 0 0;
-			font-size: 1.1em;
+			font-size: 1.25em;
+			font-weight: 400;
 		}
-		.resume-info-label {
-			margin-right: 2.5em;
+		.resume-label {
+			margin-right: 2em;
+		}
+		.resume-label--small {
+			color:  #888;
+		}
+		.resume-vline {
+			margin: 0 2em;
+		    display: inline-block;
+			width: 1px;
+			height: 12px;
+			vertical-align: middle;
+			background: #e0e0e0;
 		}
 		.font-bold {
 			font-weight: 800
@@ -64,13 +82,18 @@
 		<h2 class="resume-title">陈钊</h2>
 		<div class="resume-box">
 			<p>
-				<span class="resume-info-label font-bold">3年工作经验</span>
-				<span class="resume-info-label">本科学历</span>
-				<span class="resume-info-label">离职-随时到岗</span>
+				<span class="font-bold">3年工作经验</span>
+				<em class="resume-vline"></em>
+				<span>男</span>
+				<em class="resume-vline"></em>
+				<span>本科学历</span>
+				<em class="resume-vline"></em>
+				<span>离职-随时到岗</span>
 			</p>
 			<p>
-				<span class="resume-info-label">Tel：13521016863</span>
-				<span class="resume-info-label">Email：zangbianxuegu@gmail.com</span>
+				<span>Tel：13521016863</span>
+				<em class="resume-vline"></em>
+				<span>Email：zangbianxuegu@gmail.com</span>
 			</p>
 		</div>
 		<div class="resume-box">
@@ -79,37 +102,51 @@
 				<li class="resume-box-item">3年经验，熟练使用 HTML、CSS 和 JavaScript 进行前端开发。</li>
 				<li class="resume-box-item">熟练使用 Sass、Compass、 jQuery、Bootstrap、 Vue.js、Riot.js 等。</li>
 				<li class="resume-box-item">了解 Rails、Python、Node.js 等后端技术，了解面向对象和 MVC 设计思想。</li>
-				<li class="resume-box-item">熟练 Git、SVN 等版本管理的使用。</li>
+				<li class="resume-box-item">熟练使用 Git、SVN 等版本管理工具。</li>
 				<li class="resume-box-item">基本的英文文档阅读能力，翻译：<a href="http://zangbianxuegu.farbox.com/post/fan-yi-geng-tou-ming-de-ui-dai-ma-he-ming-ming-kong-jian" target="_blank">更透明的 UI 代码和命名空间</a>、<a href="https://zh.wikipedia.org/wiki/阿莫士·奧爾柯特" target="_blank">Amos Bronson Alcott</a>。</li>
 			</ul>
 		</div>
 		<div class="resume-box">
 			<h3 class="resume-box-title">求职意向</h3>
 			<p>
-				<span class="resume-info-label">web前端</span>
-				<span class="resume-info-label">13k-18k</span>
-				<span class="resume-info-label">北京</span>
+				<span>web前端</span>
+				<em class="resume-vline"></em>
+				<span>13k-18k</span>
+				<em class="resume-vline"></em>
+				<span>北京</span>
 			</p>
 		</div>
 		<div class="resume-box">
 			<h3 class="resume-box-title">工作经历</h3>
 			<ul class="resume-box-list">
 				<li class="resume-box-item">
-					<h4 class="resume-box-item-title">2015.09 - 2016.11  简单心理  web前端工程师</h4>
-					<ul>
-						<li>公司前端技术建设，前端从无到有的代码优化、整体架构优化。</li>
+					<h4 class="resume-box-item-title">
+						<span class="resume-label">2015.09 - 2016.11</span>
+						<a class="resume-label" href="https://www.jiandanxinli.com/" target="_blank">简单心理</a>
+						<span class="resume-label resume-label--small">web前端工程师</span>
+					</h4>
+					<div>简单心理——提供高质量心理服务、国内领先的心理咨询平台。作为公司的初创员工之一，随着公司业务的发展参与技术项目的开发与迭代。</div>
+					<ul class="resume-box-list">
+						<li>公司前端技术建设，前端从无到有的代码优化、整体项目优化。</li>
 						<li>熟悉 Ruby Rails 以及 Rails 相关，配合后端进行前端开发。</li>
 						<li>探索 Riot、Vue 和 PostCSS 进行前端组件化开发。</li>
 						<li>前端规范总结，技术团队博客文章 <a href="https://jiandanxinli.github.io/2016-08-11.html" title="CSS 命名规范总结" target="_blank">CSS 命名规范总结</a>。</li>
 					</ul>
+					<div>后因家庭家人缘故而离职。</div>
 				</li>
 				<li>
-					<h4 class="resume-box-item-title">2014.03 - 2015.09  中关村在线  web前端工程师</h4>
-					<ul>
+					<h4 class="resume-box-item-title">
+						<span class="resume-label">2014.03 - 2015.09</span>
+						<a class="resume-label" href="http://www.zol.com.cn/" target="_blank">中关村在线</a>
+						<span class="resume-label resume-label--small">web前端工程师</span>
+					</h4>
+					<div>中关村在线——中国第一科技门户。参与公司技术部门所有类型前端开发。</div>
+					<ul class="resume-box-list">
 						<li>PC 和移动端频道、商城、专题等页面的前端开发与制作。</li>
 						<li>推广、微信场景应用、游戏等专题前端开发。</li>
 						<li>推进 Sass 的应用、前端工程化的研究。</li>
 					</ul>
+					<div>后因个人发展问题而离职。</div>
 				</li>
 			</ul>
 		</div>
@@ -117,18 +154,29 @@
 			<h3 class="resume-box-title">项目经验</h3>
 			<ul class="resume-box-list">
 				<li class="resume-box-item">
-					<h4 class="resume-box-item-title">2016.08 - 2016.08  <a href="https://www.jiandanxinli.com/questions/525" target="_blank">简单心理问答改版</a>  前端开发</h4>
-					<ul>
-						<li>网站项目 Vue 化的一部分。此页面结构复杂，包括回答信息、回答的回复、回答回复的回复，以及对应的增删改操作。采用模块化分层嵌套。</li>
+					<h4 class="resume-box-item-title">
+						<span class="resume-label">2016.08 - 2016.08</span>
+						<a class="resume-label" href="https://www.jiandanxinli.com/questions/525" target="_blank">简单心理问答改版</a>
+					</h4>
+					<div>网站项目 Vue 化的一部分。此页面结构复杂，包括回答信息、回答的回复、回答回复的回复，以及对应的增删改操作。采用模块化分层嵌套。</div>
+					<ul class="resume-box-list">
 						<li>Vue 化复杂的数据操作使代码结构更加清晰简单，也提升了页面使用体验。</li>
 						<li>实践巩固了 Vue 基本使用。</li>
 					</ul>
 				</li>
 				<li>
-					<h4 class="resume-box-item-title">2015.06 - 2015.06  <a href="http://m.zol.com.cn/topic/5316018.html" target="_blank">酷派手机推广游戏专题</a>  前端开发</h4>
-					<ul>
-						<li>一个 Canvas 制作的推广游戏专题，配合产品需求、设计师、后端数据，分析技术实现方式以及具体开发。</li>
-					</ul>
+					<h4 class="resume-box-item-title">
+						<span class="resume-label">2016.01 - 2016.03</span>
+						<a class="resume-label" href="https://www.jiandanxinli.com/" target="_blank">简单心理网站优化</a>
+					</h4>
+					<div>在网站各页面不断改版过程中，优化代码，代码模块化，优化前端性能，例如制定前端图片规范，如何保存、使用图片。从而大大提升了网站的加载速度。</div>
+				</li>
+				<li>
+					<h4 class="resume-box-item-title">
+						<span class="resume-label">2015.06 - 2015.06</span>
+						<a class="resume-label" href="http://m.zol.com.cn/topic/5316018.html" target="_blank">酷派手机推广游戏专题</a>
+					</h4>
+					<div>一个用 Canvas 制作的推广游戏专题。配合产品需求、设计师、后端数据，分析技术实现方式以及具体开发。</div>
 				</li>
 			</ul>
 		</div>
@@ -136,7 +184,7 @@
 			<h3 class="resume-box-title">教育经历</h3>
 			<ul class="resume-box-list">
 				<li class="resume-box-item">河南中医药大学 2009.09 - 2013.07
-					<ul>
+					<ul class="resume-box-list">
 						<li>计算机科学与技术 本科</li>
 					</ul>
 				</li>
@@ -145,8 +193,9 @@
 		<div class="resume-box">
 			<h3 class="resume-box-title">社交账号</h3>
 			<ul class="resume-box-list">
-				<li class="resume-box-item">Blog：<a href="http://zangbianxuegu.farbox.com" target="_blank" title="Blog">http://zangbianxuegu.farbox.com/</a></li>
-				<li class="resume-box-item">Github：<a href="https://github.com/zangbianxuegu" target="_blank" title="Github">https://github.com/zangbianxuegu/</a></li>
+				<li class="resume-box-item">Blog：<a href="http://zangbianxuegu.farbox.com" target="_blank" title="Blog">http://zangbianxuegu.farbox.com</a></li>
+				<li class="resume-box-item">Github：<a href="https://github.com/zangbianxuegu" target="_blank" title="Github">https://github.com/zangbianxuegu</a></li>
+				<li class="resume-box-item">豆瓣：<a href="https://www.douban.com/people/zangbianxuegu" target="_blank" title="Github">https://www.douban.com/people/zangbianxuegu</a></li>
 			</ul>
 		</div>
 	</article>
