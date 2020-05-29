@@ -1,0 +1,26 @@
+{
+  "./content/custom-post.json": [
+    {
+      "id": "zeTH",
+      "name": "./content/custom-post.json",
+      "file": "static/chunks/10.3cbf2540a6da12a4a4c0.js",
+      "publicPath": "static/chunks/10.3cbf2540a6da12a4a4c0.js"
+    }
+  ],
+  "./content/posts/2017/first-post.json": [
+    {
+      "id": "Rb/b",
+      "name": "./content/posts/2017/first-post.json",
+      "file": "static/chunks/11.d4dd90355b54151cf2f1.js",
+      "publicPath": "static/chunks/11.d4dd90355b54151cf2f1.js"
+    }
+  ],
+  "./content/posts/2017/post-two.json": [
+    {
+      "id": "LjQr",
+      "name": "./content/posts/2017/post-two.json",
+      "file": "static/chunks/12.68c2f00fb624bd82ba37.js",
+      "publicPath": "static/chunks/12.68c2f00fb624bd82ba37.js"
+    }
+  ]
+}

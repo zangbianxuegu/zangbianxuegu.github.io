@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function formatDate(dateString) {\n  var utcString = new Date(dateString).toUTCString();\n  var splitDate = utcString.split(' ');\n  var dateArr = splitDate.slice(1, 4); // Swap day and month.\n  // dateArr.splice(1, 1, dateArr.splice(0, 1, dateArr[1])[0])\n\n  return dateArr.join(' ');\n}","map":null,"metadata":{},"sourceType":"module"}
