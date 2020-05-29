@@ -1,29 +1,40 @@
 {
-  "name": "zangbianxuegu.github.io",
-  "version": "1.0.0",
-  "description": "",
+  "name": "next-blog",
+  "version": "3.2.1",
+  "description": "Markdown based blog using next.js",
   "main": "index.js",
-  "license": "MIT",
+  "homepage": "http://timscanlin.net",
+  "twitter": "tim_scanlin",
   "scripts": {
-    "dev": "next",
+    "start": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "build:content": "processmd content/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json",
+    "build:content:watch": "processmd content/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json --watch",
+    "build:export": "npm run build && npm run export",
+    "export": "next export && cp -R static/* out/",
+    "deploy": "npm run build:content && npm run build:export && mv out public",
+    "server": "NODE_ENV=production node server.js",
+    "v-patch": "npm version patch && git push --tags && npm publish && git push",
+    "v-minor": "npm version minor && git push --tags && npm publish && git push",
+    "v-major": "npm version major && git push --tags && npm publish && git push"
+  },
+  "keywords": [
+    "blog",
+    "next.js",
+    "next",
+    "Tim",
+    "Scanlin"
+  ],
+  "author": "Tim Scanlin",
+  "license": "MIT",
+  "devDependencies": {
+    "next": "^9.3.0",
+    "processmd": "^4.5.0",
+    "standard": "^14.3.2"
   },
   "dependencies": {
-    "@material-ui/core": "^4.8.3",
-    "@mdx-js/loader": "^1.5.4",
-    "@next/mdx": "^9.2.0",
-    "clsx": "^1.0.4",
-    "next": "^9.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
-    "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-preval": "^4.0.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-react": "^7.18.0"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "styled-jsx": "^3.2.5"
   }
 }
