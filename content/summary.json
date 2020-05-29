@@ -1,21 +1,5 @@
 {
   "fileMap": {
-    "content/custom-post.json": {
-      "title": "Custom post",
-      "date": "2017-06-01T00:00:00.000Z",
-      "page": "post",
-      "paths": [
-        "/custom-post",
-        "/custom-post-alias",
-        "/subpath/custom-post-alias"
-      ],
-      "preview": "An alias\n\nAnd another alias",
-      "dir": "content",
-      "base": "custom-post.json",
-      "ext": ".json",
-      "sourceBase": "custom-post.md",
-      "sourceExt": ".md"
-    },
     "content/index.json": {
       "siteTitle": "Next Blog",
       "description": "A blog built using next and processmd",
@@ -41,14 +25,20 @@
       "sourceBase": "index.md",
       "sourceExt": ".md"
     },
-    "content/posts/2017/first-post.json": {
-      "title": "First post",
+    "content/custom-post.json": {
+      "title": "Custom post",
       "date": "2017-06-01T00:00:00.000Z",
-      "preview": "First post!\n\nCheckout github to see my other projects\n\nanother page",
-      "dir": "content/posts/2017",
-      "base": "first-post.json",
+      "page": "post",
+      "paths": [
+        "/custom-post",
+        "/custom-post-alias",
+        "/subpath/custom-post-alias"
+      ],
+      "preview": "An alias\n\nAnd another alias",
+      "dir": "content",
+      "base": "custom-post.json",
       "ext": ".json",
-      "sourceBase": "first-post.md",
+      "sourceBase": "custom-post.md",
       "sourceExt": ".md"
     },
     "content/posts/2017/post-two.json": {
@@ -59,6 +49,16 @@
       "base": "post-two.json",
       "ext": ".json",
       "sourceBase": "post-two.md",
+      "sourceExt": ".md"
+    },
+    "content/posts/2017/first-post.json": {
+      "title": "First post",
+      "date": "2017-06-01T00:00:00.000Z",
+      "preview": "First post!\n\nCheckout github to see my other projects\n\nanother page",
+      "dir": "content/posts/2017",
+      "base": "first-post.json",
+      "ext": ".json",
+      "sourceBase": "first-post.md",
       "sourceExt": ".md"
     }
   },
